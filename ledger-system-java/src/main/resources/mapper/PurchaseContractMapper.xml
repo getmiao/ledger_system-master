@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ledger.mapper.PurchaseContractMapper">
+
+    <resultMap id="BaseResultMap" type="com.ledger.model.entity.PurchaseContract">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="salesId" column="sales_id" jdbcType="BIGINT"/>
+            <result property="subcontractingUnit" column="subcontracting_unit" jdbcType="VARCHAR"/>
+            <result property="director" column="director" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="contractName" column="contract_name" jdbcType="VARCHAR"/>
+            <result property="contractAmount" column="contract_amount" jdbcType="DECIMAL"/>
+            <result property="settlementAmount" column="settlement_amount" jdbcType="DECIMAL"/>
+            <result property="contractDate" column="contract_date" jdbcType="DATE"/>
+            <result property="contractPeriod" column="contract_period" jdbcType="VARCHAR"/>
+            <result property="receivedInvoiceAmount" column="received_invoice_amount" jdbcType="DECIMAL"/>
+            <result property="actualRevenue" column="actual_revenue" jdbcType="DECIMAL"/>
+            <result property="purchaseMethod" column="purchase_method" jdbcType="VARCHAR"/>
+            <result property="taxRate" column="tax_rate" jdbcType="DECIMAL"/>
+            <result property="purchaseStart" column="purchase_start" jdbcType="DATE"/>
+            <result property="purchaseEnd" column="purchase_end" jdbcType="DATE"/>
+            <result property="committeeDate" column="committee_date" jdbcType="DATE"/>
+            <result property="createId" column="create_id" jdbcType="BIGINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id
+        ,sales_id,subcontracting_unit,
+        director,phone,contract_name,
+        contract_amount,settlement_amount,contract_date,
+        contract_period,receivedInvoiceAmount,
+          actualRevenue,
+          purchase_method,taxRate,purchase_start,
+        purchase_end,committee_date,create_id,
+        create_time,update_time
+    </sql>
+</mapper>

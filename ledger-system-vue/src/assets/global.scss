@@ -1,0 +1,100 @@
+body, html, #app {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Source Han Sans', Arial, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+// 全局主色、辅助色
+:root {
+  --primary-color: #409eff;
+  --primary-hover: #1976d2;
+  --success-color: #67c23a;
+  --warning-color: #e6a23c;
+  --danger-color: #f56c6c;
+  --info-color: #909399;
+  --border-radius: 10px;
+  --box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+  --card-bg: #fff;
+  --input-bg: #f7f9fc;
+  --input-border: #e0e3ea;
+}
+
+// 卡片
+.el-card {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background: var(--card-bg);
+  border: none;
+}
+
+// 按钮
+.el-button {
+  border-radius: 8px !important;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+.el-button--primary {
+  background: var(--primary-color);
+  border: none;
+}
+.el-button--primary:hover {
+  background: var(--primary-hover);
+}
+
+// 输入框
+.el-input__wrapper {
+  background: var(--input-bg);
+  border-radius: 8px;
+  border: 1px solid var(--input-border);
+  box-shadow: none;
+}
+
+// 表单项
+.el-form-item {
+  margin-bottom: 18px;
+}
+
+// 表格
+.el-table {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+.el-table th, .el-table td {
+  background: #f8fafc;
+  color: #333;
+}
+.el-table th {
+  font-weight: bold;
+  background: #f0f4fa;
+}
+
+// 分页
+.el-pagination {
+  margin-top: 18px;
+  justify-content: center;
+}
+
+// 对话框
+.el-dialog {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+// 下拉菜单
+.el-dropdown-menu {
+  border-radius: 8px;
+}
+
+// 滚动条美化
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f0f4fa;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d8e2;
+  border-radius: 8px;
+} 
